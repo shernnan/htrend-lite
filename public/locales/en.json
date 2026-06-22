@@ -1,0 +1,13 @@
+{
+  "title": "Real-Time YouTube Analytics",
+  "subtitle": "Enter the link of any Video, Short, or Channel to break down its performance metrics instantly.",
+  "placeholder": "Paste video or channel URL here...",
+  "btn_analyze": "Analyze",
+  "api_config": "Configure API",
+  "metric_views": "Views",
+  "metric_likes": "Likes",
+  "metric_comments": "Comments",
+  "chart_title": "Velocity & Performance",
+  "chart_label": "Metrics Volume",
+  "footer": "Static open-source tool."
+}
