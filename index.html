@@ -18,11 +18,11 @@
             
             <div class="flex items-center space-x-4">
                 <select id="language-select" class="bg-slate-900 border border-slate-800 text-sm text-slate-300 rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block p-2">
-                    <option value="es" selected>Español</option>
-                    <option value="en">English</option>
+                    <option value="en" selected>English</option>
+               
                 </select>
                 <button id="api-config-btn" data-i18n="api_config_btn" class="text-sm text-slate-400 hover:text-cyan-400 transition-colors">
-                    Configurar API
+                    Configure API
                 </button>
             </div>
         </div>
@@ -32,10 +32,10 @@
         
         <section class="max-w-3xl mx-auto text-center space-y-6">
             <h1 data-i18n="title" class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
-                Análisis de YouTube en Tiempo Real
+                Real-Time YouTube Analytics
             </h1>
             <p data-i18n="description" class="text-slate-400 text-sm sm:text-base max-w-xl mx-auto">
-                Introduce el enlace de cualquier Video, Short o Canal para desglosar sus métricas de rendimiento instantáneamente.
+                Enter the link to any Video or Short to instantly break down its performance metrics.
             </p>
             
             <form id="search-form" class="mt-4 flex flex-col sm:flex-row gap-3">
@@ -44,7 +44,7 @@
                         type="text" 
                         id="search-input"
                         data-i18n-placeholder="search_placeholder"
-                        placeholder="Pega la URL del video o canal aquí..." 
+                        placeholder="Paste the video URL here..." 
                         class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3.5 text-slate-200 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-500 transition-all text-sm"
                         required
                     >
@@ -54,7 +54,7 @@
                     data-i18n="analyze_btn"
                     class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-semibold px-6 py-3.5 rounded-xl text-sm transition-all shadow-lg shadow-cyan-500/10 active:scale-[0.98]"
                 >
-                    Analizar
+                    Analyze
                 </button>
             </form>
         </section>
@@ -65,30 +65,30 @@
                 <div id="meta-thumbnail" class="w-full md:w-56 aspect-video bg-slate-800 rounded-xl overflow-hidden flex items-center justify-center text-slate-600">
                 </div>
                 <div class="flex-grow text-center md:text-left space-y-2">
-                    <h2 id="meta-title" data-i18n="meta_title" class="text-xl font-bold text-white leading-tight">Título del Recurso</h2>
-                    <p id="meta-author" data-i18n="meta_author" class="text-sm text-cyan-400 font-medium">Nombre del Canal</p>
-                    <p id="meta-description" data-i18n="meta_description" class="text-xs text-slate-400 line-clamp-2 max-w-2xl">Descripción breve del contenido analizado...</p>
+                    <h2 id="meta-title" data-i18n="meta_title" class="text-xl font-bold text-white leading-tight">Video title</h2>
+                    <p id="meta-author" data-i18n="meta_author" class="text-sm text-cyan-400 font-medium">Channel Name</p>
+                    <p id="meta-description" data-i18n="meta_description" class="text-xs text-slate-400 line-clamp-2 max-w-2xl">Brief description of the content analyzed...</p>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div class="bg-slate-900/40 border border-slate-900 p-6 rounded-2xl space-y-1">
-                    <p data-i18n="metric_views" class="text-xs font-semibold tracking-wider text-slate-500 uppercase">Visualizaciones</p>
+                    <p data-i18n="metric_views" class="text-xs font-semibold tracking-wider text-slate-500 uppercase">Views</p>
                     <p id="metric-views" class="text-2xl sm:text-3xl font-bold text-white tabular-nums">0</p>
                 </div>
                 <div class="bg-slate-900/40 border border-slate-900 p-6 rounded-2xl space-y-1">
-                    <p data-i18n="metric_likes" class="text-xs font-semibold tracking-wider text-slate-500 uppercase">Me Gusta</p>
+                    <p data-i18n="metric_likes" class="text-xs font-semibold tracking-wider text-slate-500 uppercase">Likes</p>
                     <p id="metric-likes" class="text-2xl sm:text-3xl font-bold text-white tabular-nums">0</p>
                 </div>
                 <div class="bg-slate-900/40 border border-slate-900 p-6 rounded-2xl space-y-1">
-                    <p data-i18n="metric_comments" class="text-xs font-semibold tracking-wider text-slate-500 uppercase">Comentarios</p>
+                    <p data-i18n="metric_comments" class="text-xs font-semibold tracking-wider text-slate-500 uppercase">Comments</p>
                     <p id="metric-comments" class="text-2xl sm:text-3xl font-bold text-white tabular-nums">0</p>
                 </div>
             </div>
 
             <div class="bg-slate-900/30 border border-slate-900 p-6 rounded-2xl">
                 <div class="flex items-center justify-between mb-4">
-                    <h3 data-i18n="chart_title" class="text-sm font-semibold text-slate-400 tracking-wide uppercase">Velocidad y Rendimiento</h3>
+                    <h3 data-i18n="chart_title" class="text-sm font-semibold text-slate-400 tracking-wide uppercase">Speed ​​and Performance</h3>
                     <span class="flex h-2 w-2 relative">
                         <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                         <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
